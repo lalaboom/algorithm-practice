@@ -9,7 +9,7 @@
 
 # 思路：
 
-#没看很懂思路
+#没看很懂
 
 class Solution:
     # 返回构造的TreeNode根节点
