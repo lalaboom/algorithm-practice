@@ -3,8 +3,10 @@
 
 class Solution:
     def Convert(self, pRootOfTree):
-        if not pRootOfTree and not pRootOfTree.left and not pRootOfTree.right
-            return None
+        if not pRootOfTree:
+            return pRootOfTree
+        if not pRootOfTree.left and not pRootOfTree.right:
+            return pRootOfTree
 #处理左子树
         self.Convert(pRootOfTree.left)      
         left = pRootOfTree.left
