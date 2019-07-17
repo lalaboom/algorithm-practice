@@ -1,1 +1,1 @@
-print(True or False)
+print(list('abc'))
