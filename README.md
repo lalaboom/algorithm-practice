@@ -2,7 +2,7 @@
 
 #7.22    
 
-学习了菜鸟教程的MySQL的基本语法
+学习了菜鸟教程的MySQL的基本语法， 感觉就是一种留调替补删的工具，功能很像pandas和numpy
 
 安装MySQL，找项目MySQL准备进行实践。
 https://blog.csdn.net/hju22/article/details/86533560
