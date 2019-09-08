@@ -1,16 +1,17 @@
 ﻿# algorithm-practice
-算法图解------剑指offer-------leetcode
+剑指offer-------leetcode
 
 目前是存放LeetCode(中文)练习题的思路和解析。
-目前只做简单题和中等难度题目。
 
-题目数量: 
+刷题顺序
 
-      简单题:       290
-      中等题:       536
-      总计   :      826
+剑指offer 60
 
-开始时间                 预计用时（day）       每天完成数量
+[初级算法探索](https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/)
 
-2019.7.13               365？                        2-3
+[腾讯精选50](https://leetcode-cn.com/problemset/50/)
+
+[HOT100](https://leetcode-cn.com/problemset/hot-100/)
+
+[精选 TOP 面试题](https://leetcode-cn.com/problemset/top/)
 
