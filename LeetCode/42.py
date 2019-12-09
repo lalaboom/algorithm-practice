@@ -1,22 +1,34 @@
-
-if len(height) ==0:
+length = len(nums)
+if length<2:
     return 0
-left,right = 0,len(height)-1
-left_max, right_max = height[left], height[right]
-r= 0
-while left < right:
-     if height[left] <= height[right]:
-        if height[left] > left_max:
-            left_max = height[left]
-        else:
-            r += left_max - height[left]
-        left += 1
+cur_max_index = nums[0]
+pre_max_index = nums[0]
+res = 0+1
+for i in range(1,length):
+    if cur_max_index < i:
+        cur_max_index = pre_max_max_index
+        res += 1
+    if pre_max_max_index < nums[i] + i:
+        pre_max_max_index =  nums[i] + i
+return res
 
-    else:
-        if height[right] > right_max:
-            right_max = height[right]
-        else:
-            r += right_max - height[right]
-        right -= 1
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        length = len(nums)
+        if length < 2:
+            return 0
+        cur_max_index = nums[0]
+        pre_max_max_index = nums[0]
+        res = 1
+        for i in range(length):
+            if cur_max_index < i:
+                cur_max_index = pre_max_max_index
+                res += 1
+            if pre_max_max_index < nums[i] + i:
+                pre_max_max_index =  nums[i] + i
+        return res
 
-return r  
+作者：aofengli
+链接：https://leetcode-cn.com/problems/jump-game-ii/solution/tiao-yue-you-xi-2-by-aofengli/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
