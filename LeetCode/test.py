@@ -1,3 +1,2 @@
-str = " "
-seq = ("a", "b", "c") # 字符串序列
-print(str.join(seq))
+for i in range(3):
+    print(i)
