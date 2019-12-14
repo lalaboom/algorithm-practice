@@ -3,9 +3,9 @@
 
 目前是存放LeetCode(中文)练习题的思路和解析。
 
-刷题顺序
+剑指offer 60 √
 
-剑指offer 60
+leetcode 110/200
 
 [初级算法探索](https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/)
 
