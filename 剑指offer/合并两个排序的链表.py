@@ -1,26 +1,15 @@
-#重建二叉树
-
-# 题目：
-
-# 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。
-# 假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
-# 例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，
-# 则重建二叉树并返回。
-
-# 思路：
-
-#没看很懂思路
-
 class Solution:
-    # 返回构造的TreeNode根节点
-    def reConstructBinaryTree(self, pre, tin):
-        if len(pre) == 0:
-            return None
-        elif len(pre) == 1:
-            return TreeNode(pre[0])
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        if not l1: return l2  # 终止条件，直到两个链表都空
+        if not l2: return l1
+        if l1.val <= l2.val:  # 递归调用
+            l1.next = self.mergeTwoLists(l1.next,l2)
+            return l1
         else:
-            root = TreeNode(pre[0])
-            pos = tin.index(pre[0])
-            root.left = self.reConstructBinaryTree(pre[1:pos+1],tin[:pos])
-            root.right = self.reConstructBinaryTree(pre[pos+1:], tin[pos+1:])
-        return root
+            l2.next = self.mergeTwoLists(l1,l2.next)
+            return l2
+
+作者：z1m
+链接：https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/yi-kan-jiu-hui-yi-xie-jiu-fei-xiang-jie-di-gui-by-/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
