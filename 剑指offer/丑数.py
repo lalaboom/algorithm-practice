@@ -7,7 +7,7 @@ class Solution:
         if index == 0:
             return 0
         baselist = [1]
-        min2, min3, min5 = 0, 0 ,0
+        min2, min3, min5 = 0, 0 ,0 #找到初始的没有乘2，或3，或5的数
         CurIndex = 1
         while CurIndex < index:
             MinNum = min(baselist[min2] * 2, baselist[min3] * 3, baselist[min5] * 5)

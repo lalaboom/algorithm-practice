@@ -1,16 +1,6 @@
-if not candidates:
-    return []
-n = len(candidates)
-res = []
-candidates.sort()
-def helper(i,tmp,target):
-    if target==0:
-        res.append(tmp)
-        return
-    if i == n or target<candidates[i]:
-        return
-    helper(i,tmp+[candidates[i]],target - candidates[i])
-    helper(i+1,tmp,target)
-
-helper(0,[],target)
-return res
+def Sum_Solution(n):
+    ans = (n>0) and n
+    print(ans)
+    return ans and Sum_Solution(n-1)+ans
+n=7
+print(False+1)

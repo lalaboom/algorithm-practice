@@ -9,7 +9,6 @@
 
 class Solution:
     def Sum_Solution(self, n):
-        count = n
-        if count:
-            count = count + self.Sum_Solution(n-1)
-        return count
+        ans = (n>0) and n
+        return ans and self.Sum_Solution(n-1)+ans
+    #and判断都为真的话输出and后面的那个数字

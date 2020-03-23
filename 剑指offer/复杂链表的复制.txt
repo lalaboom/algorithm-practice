@@ -1,0 +1,30 @@
+思路：第一步在原链表的基础上复制节点，将节点复制在原节点的后面。第二步复制随机节点。 第三步将新旧链表分离。
+https://www.cnblogs.com/clouds-114/p/8733558.html
+class Solution:
+    def Clone(self,pHead):
+        if pHead == None:
+            return None
+        #复制节点在原节点之后
+        pCur = pHead
+        while(pCur != None):
+            node = RandomListNode(pCur.label)
+            node.next = pCur.next
+            pCur.next = node
+            pCur = node.next
+        #复制random节点
+        pCur = pHead
+        while(pCur != None):
+            if pCur.random != None:
+                pCur.next.random = pCur.random.next
+            pCur = pCur.next.next
+        head = pHead.next
+        cur = head
+        #将新旧链表分离
+        pCur = pHead
+        while(pCur != None):
+            pCur.next = pCur.next.next
+            if cur.next != None:
+                cur.next = cur.next.next
+            cur = cur.next
+            pCur = pCur.next
+        return head

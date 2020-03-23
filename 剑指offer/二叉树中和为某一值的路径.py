@@ -26,7 +26,7 @@ class Solution:
     def FindPath(self, root, expectNumber):
         if not root:
             return [] #如果根节点为空，返回空
-        if not root.left and not root.right and expectNumber = root.val:
+        if not root.left and not root.right and expectNumber == root.val:
             return [[root.val]] #如果左子树和右子树都没有，并且符合计数，则返回此数值
         res = []
         left = self.FindPath(root.left, expectNumber - root.val)
