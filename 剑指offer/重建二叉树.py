@@ -1,3 +1,8 @@
+A = [1,2,3,4]
+del A[0]
+print(2&1)
+
+'''
 #重建二叉树
 
 # 题目：
@@ -24,3 +29,5 @@ class Solution:
             root.left = self.reConstructBinaryTree(pre[1:pos+1],tin[:pos])
             root.right = self.reConstructBinaryTree(pre[pos+1:], tin[pos+1:])
         return root
+'''
+
